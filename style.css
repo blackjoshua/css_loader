@@ -1,0 +1,60 @@
+/*
+@Author : Joshua
+@Instagram : yalvacee_
+ */
+html,body{
+    width:100%;
+    height:100%;
+    background-color: #000;
+    overflow: hidden;
+}
+.container{
+    position: absolute;
+    top:40%;
+    left:47%;
+}
+.loader{
+    position: absolute;
+    width:150px;
+    height: 150px;
+    border: 3px solid transparent;
+    border-top-color: #460018;
+    border-radius: 50%;
+    animation: 1s spin infinite;
+}
+.loader:before{
+    content:"";
+    position: absolute;
+    border-radius: 50%;
+    top:15px;
+    right:15px;
+    left:15px;
+    bottom: 15px;
+    border:3px solid transparent;
+    border-top-color: #fff43b;
+    animation: 2s spin infinite;
+}
+.loader:after{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    top:30px;
+    right:30px;
+    left:30px;
+    bottom:30px;
+    border:3px solid transparent;
+    border-top-color: #002880;
+    animation: 3s spin infinite;
+}
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+        -webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+        webkit-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+    }
+}
